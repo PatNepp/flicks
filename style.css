@@ -5,3 +5,102 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+.navbar-container {
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+    color: white;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+}
+
+.logo {
+    font-size: 35px;
+    color: #4dbf00;
+}
+
+.menu-container {
+    flex: 6;
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.menu-list-item {
+    margin-right: 30px;
+}
+
+.menu-list-item.active {
+    margin-right: 30px;
+    font-weight: bold;
+}
+
+.profile-container {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.profile-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    /* object fit fixes wonky circle */
+    object-fit: cover;
+}
+
+.profile-text-container {
+    margin: 0 15px;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative
+}
+
+.fa-sun {
+    color: goldenrod
+}
+
+.fa-moon {
+    color: navy
+}
+
+.toggle-ball {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    right: 1px;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 50px;
+    height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+}
