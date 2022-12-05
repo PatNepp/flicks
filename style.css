@@ -117,7 +117,7 @@ body {
 
 .container {
     /* calc() is taking the extra 50px off of the top of the page because of the navbar. The screen overflowed without this */
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background-color: #151515;
     color: white;
 }
@@ -150,3 +150,112 @@ body {
     outline: none;
     font-weight: bold;
 }
+
+.movie-list-container {
+    padding: 10px;
+}
+
+.movie-list-wrapper {
+    position: relative;
+}
+
+.movie-list {
+    display: flex;
+    height: 250px;
+    align-items: center;
+}
+
+.movie-list-item-img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    transition: all .5s ease-in-out;
+}
+
+.movie-list-item {
+    margin-right: 35px;
+    position: relative;
+}
+
+.movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.25);
+    margin: 0 15px;
+    opacity: 0.5;
+}
+
+.movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-text,
+.movie-list-item:hover .movie-list-button {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.movie-list-item-title {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 0px;
+    opacity: 0;
+}
+
+.movie-list-item-text {
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 34%;
+    left: 0px;
+    width: 90%;
+    opacity: 0;
+}
+
+.movie-list-button {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 15px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+}
+
+.arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    color: lightgray;
+    opacity: .25;
+    cursor: pointer;
+}
+
+.arrow-left {
+    font-size: 120px;
+    position: absolute;
+    top: 70px;
+    left: 10px;
+    color: lightgray;
+    opacity: .25;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
+.arrow-left:hover {
+    opacity: 1;
+    transition: all 1s ease-in-out;
+}
+
