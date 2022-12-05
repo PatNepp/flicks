@@ -114,3 +114,39 @@ body {
     font-size: 20px;
     margin-bottom: 40px;
 }
+
+.container {
+    /* calc() is taking the extra 50px off of the top of the page because of the navbar. The screen overflowed without this */
+    height: calc(100vh - 50px);
+    background-color: #151515;
+    color: white;
+}
+
+.content-container {
+    margin-left: 50px;
+}
+
+.featured-content {
+    height: 50vh;
+    padding: 50px;
+}
+
+.featured-title {
+    width: 200px;
+}
+
+.featured-text {
+    width: 600px;
+    color: lightgray;
+    margin: 30px 0;
+}
+
+.featured-button {
+    background-color: #4dbf00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
