@@ -95,6 +95,7 @@ body {
     position: absolute;
     right: 1px;
     cursor: pointer;
+    transition: all 1s ease;
 }
 
 .sidebar {
@@ -120,6 +121,7 @@ body {
     min-height: calc(100vh - 50px);
     background-color: #151515;
     color: white;
+    transition: all 1s ease;
 }
 
 .content-container {
@@ -263,3 +265,32 @@ body {
     transition: all 1s ease-in-out;
 }
 
+.container.active {
+    background-color: white;
+}
+
+.movie-list-title.active {
+    color: black;
+}
+
+.navbar-container.active {
+    background-color: white;
+    color: black;
+}
+
+.sidebar.active {
+    background-color: white;
+}
+
+.side-icon.active {
+    color: black;
+}
+
+.toggle.active {
+    background-color: black;
+}
+
+.toggle-ball.active {
+    background-color: white;
+    transform: translateX(-20px)
+}
